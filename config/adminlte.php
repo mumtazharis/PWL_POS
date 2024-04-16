@@ -327,6 +327,16 @@ return [
             'url' => 'kategori',
             'icon' => 'fas fa-fw fa-list',
         ],
+        [
+            'text' => 'User',
+            'url' => 'kategori',
+            'icon' => 'fas fa-fw fa-person',
+        ],
+        [
+            'text' => 'Manage Kategori',
+            'url' => 'kategori',
+            'icon' => 'fas fa-fw fa-list',
+        ],
         ['header' => 'account_settings'],
         [
             'text' => 'profile',
