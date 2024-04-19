@@ -13,7 +13,7 @@ class LevelModel extends Model
     protected $primaryKey = 'level_id';
 
 
-    public function level(): HasMany{
-        return $this->hasMany(UserModel::class);
+    public function user(): HasMany{
+        return $this->hasMany(UserModel::class, 'level_id');
     }
 }
