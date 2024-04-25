@@ -127,13 +127,11 @@ class StokController extends Controller
 
     public function update(Request $request, string $id){
         $request->validate([
-            'barang_id' => 'required|integer',
             'stok_jumlah'  => 'required|integer|min:0'
             
         ]);
 
         StokModel::find($id)->update([
-            'barang_id' => $request->barang_id,
             'stok_jumlah' => $request->stok_jumlah,
             'stok_tanggal' => Carbon::now('Asia/Jakarta')
         ]);
